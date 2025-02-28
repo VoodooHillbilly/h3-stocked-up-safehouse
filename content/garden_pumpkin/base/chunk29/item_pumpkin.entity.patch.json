@@ -1,0 +1,48 @@
+{
+	"tempHash": "00A9B93A825F5BDC",
+	"tbluHash": "005BA5CA6AC00627",
+	"patch": [
+		{
+			"AddEntity": [
+				"cafe5544f30d269b",
+				{
+					"parent": "bdd2f3ef19f86bbb",
+					"name": "Item_Pumpkin",
+					"factory": "[assembly:/_pro/design/setpieces/setpieces_evergreen.template?/setpiece_evergreen_cosmeticitem.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/setpieces/setpieces_evergreen.template?/setpiece_evergreen_cosmeticitem.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_mTransform": {
+							"type": "SMatrix43",
+							"value": {
+								"rotation": {
+									"x": 34.803488443393896,
+									"y": 1.5666608057923768,
+									"z": -1.092656706479251
+								},
+								"position": {
+									"x": 29.658252716064453,
+									"y": -190.2725524902344,
+									"z": -10.960579872131348
+								}
+							}
+						},
+						"repositoryId": {
+							"type": "ZGuid",
+							"value": "58dad7ea-f047-469f-92a1-d915a462c14c"
+						},
+						"m_bSpawnOnStart": {
+							"type": "bool",
+							"value": true
+						},
+						"m_eidParent": {
+							"type": "SEntityTemplateReference",
+							"value": "fffffffffffffffe",
+							"postInit": true
+						}
+					}
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}

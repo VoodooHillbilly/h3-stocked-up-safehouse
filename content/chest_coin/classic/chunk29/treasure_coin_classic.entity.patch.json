@@ -1,0 +1,80 @@
+{
+	"tempHash": "00A9B93A825F5BDC",
+	"tbluHash": "005BA5CA6AC00627",
+	"patch": [
+		{
+			"SubEntityOperation": [
+				"51cd8de4fbdfaa4b",
+				{
+					"AddEventConnection": [
+						"PollTrue",
+						"SpawnItem",
+						"cafe2b068def211f"
+					]
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe2b068def211f",
+				{
+					"parent": "da570d50f783e438",
+					"name": "ItemRespawner Coin",
+					"factory": "[modules:/zitemspawner.class].pc_entitytype",
+					"blueprint": "[modules:/zitemspawner.class].pc_entityblueprint",
+					"properties": {
+						"m_mTransform": {
+							"type": "SMatrix43",
+							"value": {
+								"rotation": {
+									"x": 180.0,
+									"y": 0.0,
+									"z": 180.00021
+								},
+								"position": {
+									"x": 0.04192708060145378,
+									"y": -0.2207611948251724,
+									"z": 0.05290529998779297
+								}
+							}
+						},
+						"m_bSpawnOnStart": {
+							"type": "bool",
+							"value": false
+						},
+						"m_eidParent": {
+							"type": "SEntityTemplateReference",
+							"value": "3cd8abcc3f6dc948"
+						},
+						"m_rMainItemKey": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe99d0925bb9e5",
+							"postInit": true
+						}
+					},
+					"events": {
+						"OnPickup": { "SetTrue": ["9d34601bc8ec7171"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe99d0925bb9e5",
+				{
+					"parent": "da570d50f783e438",
+					"name": "ItemRepoKey Coin",
+					"factory": "[modules:/zitemrepositorykeyentity.class].pc_entitytype",
+					"blueprint": "[modules:/zitemrepositorykeyentity.class].pc_entityblueprint",
+					"properties": {
+						"m_RepositoryId": {
+							"type": "ZGuid",
+							"value": "98bf7fc1-7857-4999-bc99-586c49f24017"
+						}
+					}
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}

@@ -1,0 +1,18 @@
+{
+	"tempHash": "00A9B93A825F5BDC",
+	"tbluHash": "005BA5CA6AC00627",
+	"patch": [
+		{
+			"SubEntityOperation": [
+				"cafe5314c007ca8e",
+				{
+					"AddProperty": [
+						"requiredMasteryLevel",
+						{ "type": "int32", "value": 100 }
+					]
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}

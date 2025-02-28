@@ -1,0 +1,48 @@
+{
+	"tempHash": "00A9B93A825F5BDC",
+	"tbluHash": "005BA5CA6AC00627",
+	"patch": [
+		{
+			"AddEntity": [
+				"cafe5c0a0ab6d509",
+				{
+					"parent": "bdd2f3ef19f86bbb",
+					"name": "Item_KiwiRedTie",
+					"factory": "[assembly:/_pro/design/setpieces/setpieces_evergreen.template?/setpiece_evergreen_cosmeticitem.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/setpieces/setpieces_evergreen.template?/setpiece_evergreen_cosmeticitem.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_mTransform": {
+							"type": "SMatrix43",
+							"value": {
+								"rotation": {
+									"x": 0.0013620023270911386,
+									"y": 0.0395412322291377,
+									"z": 176.0544407335326
+								},
+								"position": {
+									"x": 11.58285140991211,
+									"y": -138.1596221923828,
+									"z": -18.999326705932617
+								}
+							}
+						},
+						"repositoryId": {
+							"type": "ZGuid",
+							"value": "4ab356b3-234d-4546-9490-65458a8a82ab"
+						},
+						"m_bSpawnOnStart": {
+							"type": "bool",
+							"value": true
+						},
+						"m_eidParent": {
+							"type": "SEntityTemplateReference",
+							"value": "fffffffffffffffe",
+							"postInit": true
+						}
+					}
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}

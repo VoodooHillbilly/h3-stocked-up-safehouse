@@ -1,0 +1,41 @@
+{
+	"tempHash": "00A9B93A825F5BDC",
+	"tbluHash": "005BA5CA6AC00627",
+	"patch": [
+		{
+			"SubEntityOperation": [
+				"08003b38d60a5be3",
+				{
+					"SetPropertyValue": {
+						"property_name": "m_mTransform",
+						"value": {
+							"rotation": {
+								"x": -0.0,
+								"y": 0.0,
+								"z": 174.25007748547182
+							},
+							"position": {
+								"x": 0.04205322265625,
+								"y": -0.2207183837890625,
+								"z": 0.04007101058959961
+							}
+						}
+					}
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"51cd8de4fbdfaa4b",
+				{
+					"AddEventConnection": [
+						"PollTrue",
+						"SpawnItem",
+						"08003b38d60a5be3"
+					]
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}

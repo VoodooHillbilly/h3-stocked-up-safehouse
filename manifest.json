@@ -1,9 +1,311 @@
 {
-	"$schema": "https://raw.githubusercontent.com/atampy25/simple-mod-framework/main/Mod%20Manager/src/lib/manifest-schema.json",
-	"version": "0.1.0",
-	"id": "YourPreferredAlias.AnIDForTheMod",
-	"name": "Test Mod",
-	"description": "A truly amazing mod",
-	"authors": ["Your Preferred Alias"],
-	"frameworkVersion": "2.25.1"
+	"id": "voodoohillbilly.h3-stocked-up-safehouse",
+	"name": "Stocked Up Safehouse",
+	"description": "Make the Safehouse's hidden chest items respawn. Add more items around the safehouse.",
+	"authors": ["VoodooHillbilly"],
+	"version": "1.0.0",
+	"frameworkVersion": "2.33.23",
+	"options": [
+		{
+			"name": "Playing Online",
+			"tooltip": "Enable this for item changes to take effect when playing online. If you enable this and use the Peacock server, you need to also install https://github.com/thepeacockproject/peacock-strings for Peacock’s text to display properly.",
+			"type": "checkbox",
+			"enabledByDefault": true,
+			"thumbs": ["ConsoleCmd OnlineResources_Disable 1"]
+		},
+		{
+			"group": "Hidden Chestː Handgun",
+			"name": "Off",
+			"tooltip": "You get... NOTHING! You can still collect the Silverballer the first time. It just won't respawn.",
+			"type": "select"
+		},
+		{
+			"group": "Hidden Chestː Handgun",
+			"name": "Silverballer",
+			"tooltip": "The Silverballer now respawns in the chest hidden behind the Safehouse shed.",
+			"type": "select",
+			"enabledByDefault": true,
+			"contentFolders": ["content/chest_handgun/silverballer"]
+		},
+		{
+			"group": "Hidden Chestː Handgun",
+			"name": "Floralballer",
+			"tooltip": "After you've collected the Silverballer the first time, the Floralballer now respawns in the chest hidden behind the Safehouse shed. Good if you're using the Comfy Safehouse Expansion.",
+			"type": "select",
+			"contentFolders": ["content/chest_handgun/floralballer"]
+		},
+		{
+			"group": "Hidden Chestː Handgun",
+			"name": "Goldballer",
+			"tooltip": "After you've collected the Silverballer the first time, the real Goldballer now respawns in the chest hidden behind the Safehouse shed. Good if you're using the Comfy Safehouse Expansion.",
+			"type": "select",
+			"contentFolders": ["content/chest_handgun/goldballer"]
+		},
+		{
+			"group": "Hidden Chestː Handgun",
+			"name": "Pyriteballer",
+			"tooltip": "After you've collected the Silverballer the first time, the original Freelancer version of the Goldballer now respawns in the chest hidden behind the Safehouse shed. Good if you have the default safehouse armory and the Freelancer Goldballer Fix.",
+			"type": "select",
+			"contentFolders": ["content/chest_handgun/pyriteballer"]
+		},
+		{
+			"group": "Hidden Chestː Fiber Wire",
+			"name": "Off",
+			"tooltip": "You get... NOTHING! You can still collect the Fiber Wire the first time. It just won't respawn.",
+			"type": "select"
+		},
+		{
+			"group": "Hidden Chestː Fiber Wire",
+			"name": "Fiber Wire",
+			"tooltip": "The Fiber Wire now respawns in the chest hidden behind the Safehouse shed.",
+			"type": "select",
+			"enabledByDefault": true,
+			"contentFolders": ["content/chest_fiberwire/fiberwire"]
+		},
+		{
+			"group": "Hidden Chestː Fiber Wire",
+			"name": "Fiber Wire Classic",
+			"tooltip": "After you've collected the Fiber Wire the first time, the Fiber Wire Classic now respawns in the chest hidden behind the Safehouse shed.",
+			"type": "select",
+			"contentFolders": ["content/chest_fiberwire/fiberwire_classic"]
+		},
+		{
+			"group": "Hidden Chestː Coin",
+			"name": "Off",
+			"tooltip": "You get... NOTHING! You can still collect the Merces reward the first time. It just won't respawn.",
+			"type": "select"
+		},
+		{
+			"group": "Hidden Chestː Coin",
+			"name": "Classic Coin",
+			"tooltip": "After you've collected the Merces reward the first time, a Classic Coin now respawns in the chest hidden behind the Safehouse shed. Gear Capacity is 1 and Rarity is Epic.",
+			"type": "select",
+			"enabledByDefault": true,
+			"contentFolders": ["content/chest_coin/classic"]
+		},
+		{
+			"group": "Hidden Chestː Coin",
+			"name": "Outstanding Service Coin",
+			"tooltip": "After you've collected the Merces reward the first time, the ICA Outstanding Service Coin now respawns in the chest hidden behind the Safehouse shed.",
+			"type": "select",
+			"contentFolders": ["content/chest_coin/outstanding"]
+		},
+		{
+			"group": "Hidden Chestː Coin",
+			"name": "1K Merces",
+			"tooltip": "After you've collected the Merces reward the first time, about 1,000 Merces reward now respawns in the chest hidden behind the Safehouse shed.",
+			"type": "select",
+			"contentFolders": ["content/chest_coin/1k"]
+		},
+		{
+			"group": "Hidden Chestː Coin",
+			"name": "10K Merces",
+			"tooltip": "After you've collected the Merces reward the first time, a 10,000 Merces reward now respawns in the chest hidden behind the Safehouse shed.",
+			"type": "select",
+			"contentFolders": ["content/chest_coin/10k"]
+		},
+		{
+			"group": "Hidden Chestː Coin",
+			"name": "30K Merces",
+			"tooltip": "The original 30,000 Merces reward now respawns in the chest hidden behind the Safehouse shed.",
+			"type": "select",
+			"contentFolders": ["content/chest_coin/30k"]
+		},
+		{
+			"group": "Basementː Lewd Kiwi",
+			"name": "Off",
+			"tooltip": "You get... NOTHING!",
+			"type": "select"
+		},
+		{
+			"group": "Basementː Lewd Kiwi",
+			"name": "2",
+			"tooltip": "Adds the Squeaky Toy kiwi to the basement bathroom. Gear Capacity is 2.",
+			"type": "select",
+			"contentFolders": ["content/basement_kiwis/lewd/base", "content/basement_kiwis/lewd/g2"]
+		},
+		{
+			"group": "Basementː Lewd Kiwi",
+			"name": "1",
+			"tooltip": "Adds the Squeaky Toy kiwi to the basement bathroom. Gear Capacity is 1.",
+			"type": "select",
+			"enabledByDefault": true,
+			"contentFolders": ["content/basement_kiwis/lewd/base", "content/basement_kiwis/lewd/g1"]
+		},
+		{
+			"group": "Basementː Lewd Kiwi",
+			"name": "0",
+			"tooltip": "Adds the Squeaky Toy kiwi to the basement bathroom. Gear Capacity is 0 for cheaters.",
+			"type": "select",
+			"contentFolders": ["content/basement_kiwis/lewd/base"]
+		},
+		{
+			"group": "Basementː Red Tie Kiwi",
+			"name": "Off",
+			"tooltip": "You get... NOTHING!",
+			"type": "select"
+		},
+		{
+			"group": "Basementː Red Tie Kiwi",
+			"name": "2",
+			"tooltip": "Adds the Red Tie Kiwi in the basement near the exit ladder. Gear Capacity is 2.",
+			"type": "select",
+			"contentFolders": ["content/basement_kiwis/red_tie/base", "content/basement_kiwis/red_tie/g2"]
+		},
+		{
+			"group": "Basementː Red Tie Kiwi",
+			"name": "1",
+			"tooltip": "Adds the Red Tie Kiwi in the basement near the exit ladder. Gear Capacity is 1.",
+			"type": "select",
+			"enabledByDefault": true,
+			"contentFolders": ["content/basement_kiwis/red_tie/base", "content/basement_kiwis/red_tie/g1"]
+		},
+		{
+			"group": "Basementː Red Tie Kiwi",
+			"name": "0",
+			"tooltip": "Adds the Red Tie Kiwi in the basement near the exit ladder. Gear Capacity is 0 for cheaters.",
+			"type": "select",
+			"contentFolders": ["content/basement_kiwis/red_tie/base"]
+		},
+		{
+			"name": "Garageː Fuse Cell",
+			"tooltip": "Add a second fuse cell if the first one is already in use. Because at this point, 47 can afford to buy a second fuse. Plus it's dangerous to build bombs in the dark. If you've just plugged in the first fuse, exit the safehouse and re-enter for the spare to appear.",
+			"type": "checkbox",
+			"enabledByDefault": true,
+			"contentFolders": ["content/garage_fuse"]
+		},
+		{
+			"group": "Garageː Propane",
+			"name": "Off",
+			"tooltip": "You get... NOTHING!",
+			"type": "select"
+		},
+		{
+			"group": "Garageː Propane",
+			"name": "8",
+			"tooltip": "Add a propane flask in the garage starting at Mastery Level 8. As soon as the garage is accessible. Gear Capacity is 4.",
+			"type": "select",
+			"contentFolders": ["content/garage_propane/base"]
+		},
+		{
+			"group": "Garageː Propane",
+			"name": "20",
+			"tooltip": "Add a propane flask in the garage starting at Mastery Level 20. Gear Capacity is 4.",
+			"type": "select",
+			"contentFolders": ["content/garage_propane/base", "content/garage_propane/m020"]
+		},
+		{
+			"group": "Garageː Propane",
+			"name": "42",
+			"tooltip": "Add a propane flask in the garage starting at Mastery Level 42. Gear Capacity is 4.",
+			"type": "select",
+			"contentFolders": ["content/garage_propane/base", "content/garage_propane/m042"]
+		},
+		{
+			"group": "Garageː Propane",
+			"name": "64",
+			"tooltip": "Add a propane flask in the garage starting at Mastery Level 64. As soon as the explosives crafting table is accessible. Gear Capacity is 4.",
+			"type": "select",
+			"enabledByDefault": true,
+			"contentFolders": ["content/garage_propane/base", "content/garage_propane/m064"]
+		},
+		{
+			"group": "Garageː Propane",
+			"name": "87",
+			"tooltip": "Add a propane flask in the garage starting at Mastery Level 87. Gear Capacity is 4.",
+			"type": "select",
+			"contentFolders": ["content/garage_propane/base", "content/garage_propane/m087"]
+		},
+		{
+			"group": "Garageː Propane",
+			"name": "100",
+			"tooltip": "Add a propane flask in the garage starting at Mastery Level 100. Another reward for completing the grind. Gear Capacity is 4.",
+			"type": "select",
+			"contentFolders": ["content/garage_propane/base", "content/garage_propane/m100"]
+		},
+		{
+			"group": "Gardenː Pumpkin",
+			"name": "Off",
+			"tooltip": "You get... NOTHING!",
+			"type": "select"
+		},
+		{
+			"group": "Gardenː Pumpkin",
+			"name": "2",
+			"tooltip": "Add a small pumpkin in the garden by the kitchen. Gear Capacity is 2 and has no rarity.",
+			"type": "select",
+			"contentFolders": ["content/garden_pumpkin/base", "content/garden_pumpkin/g2_r0"]
+		},
+		{
+			"group": "Gardenː Pumpkin",
+			"name": "1",
+			"tooltip": "Add a small pumpkin in the garden by the kitchen. Gear Capacity is 1 and has no rarity.",
+			"type": "select",
+			"enabledByDefault": true,
+			"contentFolders": ["content/garden_pumpkin/base", "content/garden_pumpkin/g1_r0"]
+		},
+		{
+			"group": "Gardenː Pumpkin",
+			"name": "0",
+			"tooltip": "Cheater, cheater, pumpkin eater. Add a small pumpkin in the garden by the kitchen. Gear Capacity is 0 and has no rarity.",
+			"type": "select",
+			"contentFolders": ["content/garden_pumpkin/base", "content/garden_pumpkin/g0_r0"]
+		},
+		{
+			"group": "Gardenː Pumpkin",
+			"name": "Common",
+			"tooltip": "Add a small pumpkin in the garden by the kitchen. Gear Capacity is 2 and has Common rarity. Included so the pumpkin stays in 47's inventory between missions.",
+			"type": "select",
+			"contentFolders": ["content/garden_pumpkin/base", "content/garden_pumpkin/g2_r1"]
+		},
+		{
+			"group": "Gardenː Pumpkin",
+			"name": "Rare",
+			"tooltip": "Add a small pumpkin in the garden by the kitchen. Gear Capacity is 1 and has Rare rarity.",
+			"type": "select",
+			"contentFolders": ["content/garden_pumpkin/base", "content/garden_pumpkin/g1_r2"]
+		},
+		{
+			"group": "Infirmaryː Poison Vials",
+			"name": "Off",
+			"tooltip": "You get... NOTHING!",
+			"type": "select"
+		},
+		{
+			"group": "Infirmaryː Poison Vials",
+			"name": "2",
+			"tooltip": "Add emetic, lethal, and sedative vials to the infirmary. Gear Capacity is 2 to match the vials in the Tool crate. They will begin appearing at Mastery Level 11.",
+			"type": "select",
+			"enabledByDefault": true,
+			"contentFolders": ["content/infirmary_vials/base", "content/infirmary_vials/g2"]
+		},
+		{
+			"group": "Infirmaryː Poison Vials",
+			"name": "1",
+			"tooltip": "Add emetic, lethal, and sedative vials to the infirmary. Gear Capacity is 1 to match the pills in the Tool crate. They will begin appearing at Mastery Level 11.",
+			"type": "select",
+			"contentFolders": ["content/infirmary_vials/base", "content/infirmary_vials/g1"]
+		},
+		{
+			"group": "Infirmaryː Poison Vials",
+			"name": "0",
+			"tooltip": "Add emetic, lethal, and sedative vials to the infirmary. Gear Capacity is still 0 to be a cheater. They will begin appearing at Mastery Level 11.",
+			"type": "select",
+			"contentFolders": ["content/infirmary_vials/base"]
+		},
+		{
+			"name": "Kitchenː Knife",
+			"tooltip": "Add a kitchen knife on the kitchen counter. Gear Capacity is 3 to match the Grape Knife.",
+			"type": "checkbox",
+			"enabledByDefault": true,
+			"contentFolders": ["content/kitchen_knife"]
+		},
+		{
+			"name": "Kitchenː Muffin",
+			"tooltip": "Add a blueberry muffin on the kitchen counter. Gear Capacity is 1.",
+			"type": "checkbox",
+			"enabledByDefault": true,
+			"contentFolders": ["content/kitchen_muffin"]
+		}
+	]
 }

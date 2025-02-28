@@ -1,0 +1,79 @@
+{
+	"tempHash": "00A9B93A825F5BDC",
+	"tbluHash": "005BA5CA6AC00627",
+	"patch": [
+		{
+			"SubEntityOperation": [
+				"51cd8de4fbdfaa4b",
+				{
+					"AddEventConnection": [
+						"PollTrue",
+						"SpawnItem",
+						"cafe28e945fef07c"
+					]
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe28e945fef07c",
+				{
+					"parent": "da570d50f783e438",
+					"name": "ItemRespawner Fiberwire",
+					"factory": "[modules:/zitemspawner.class].pc_entitytype",
+					"blueprint": "[modules:/zitemspawner.class].pc_entityblueprint",
+					"properties": {
+						"m_mTransform": {
+							"type": "SMatrix43",
+							"value": {
+								"rotation": {
+									"x": 5.94322,
+									"y": 0.00006,
+									"z": -96.02996
+								},
+								"position": {
+									"x": 0.20273,
+									"y": -0.19717,
+									"z": 0.03415
+								}
+							}
+						},
+						"m_rMainItemKey": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe383160b264fb"
+						},
+						"m_bSpawnOnStart": {
+							"type": "bool",
+							"value": false
+						},
+						"m_eidParent": {
+							"type": "SEntityTemplateReference",
+							"value": "3cd8abcc3f6dc948"
+						}
+					},
+					"events": {
+						"OnPickup": { "SetTrue": ["9d34601bc8ec7171"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe383160b264fb",
+				{
+					"parent": "da570d50f783e438",
+					"name": "ItemRepoKey Fiberwire",
+					"factory": "[modules:/zitemrepositorykeyentity.class].pc_entitytype",
+					"blueprint": "[modules:/zitemrepositorykeyentity.class].pc_entityblueprint",
+					"properties": {
+						"m_RepositoryId": {
+							"type": "ZGuid",
+							"value": "1a11a060-358c-4054-98ec-d3491af1d7c6"
+						}
+					}
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}

@@ -1,0 +1,80 @@
+{
+	"tempHash": "00A9B93A825F5BDC",
+	"tbluHash": "005BA5CA6AC00627",
+	"patch": [
+		{
+			"SubEntityOperation": [
+				"51cd8de4fbdfaa4b",
+				{
+					"AddEventConnection": [
+						"PollTrue",
+						"SpawnItem",
+						"cafe8c29e5e9b793"
+					]
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe8c29e5e9b793",
+				{
+					"parent": "da570d50f783e438",
+					"name": "ItemRespawner Handgun",
+					"factory": "[modules:/zitemspawner.class].pc_entitytype",
+					"blueprint": "[modules:/zitemspawner.class].pc_entityblueprint",
+					"properties": {
+						"m_mTransform": {
+							"type": "SMatrix43",
+							"value": {
+								"rotation": {
+									"x": -0.0,
+									"y": 0.0,
+									"z": 88.29845601447829
+								},
+								"position": {
+									"x": 0.27404388785362244,
+									"y": -0.2507531940937042,
+									"z": 0.03463029861450195
+								}
+							}
+						},
+						"m_bSpawnOnStart": {
+							"type": "bool",
+							"value": false
+						},
+						"m_eidParent": {
+							"type": "SEntityTemplateReference",
+							"value": "3cd8abcc3f6dc948"
+						},
+						"m_rMainItemKey": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe6c04c5350b9d",
+							"postInit": true
+						}
+					},
+					"events": {
+						"OnPickup": { "SetTrue": ["9d34601bc8ec7171"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe6c04c5350b9d",
+				{
+					"parent": "da570d50f783e438",
+					"name": "ItemRepoKey Handgun",
+					"factory": "[modules:/zitemrepositorykeyentity.class].pc_entitytype",
+					"blueprint": "[modules:/zitemrepositorykeyentity.class].pc_entityblueprint",
+					"properties": {
+						"m_RepositoryId": {
+							"type": "ZGuid",
+							"value": "2dfacef2-57f6-4b8d-a1ae-f1f7ada4ec22"
+						}
+					}
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}
