@@ -6,10 +6,7 @@
 			"SubEntityOperation": [
 				"333d7ce5faaad175",
 				{
-					"AddProperty": [
-						"anyTrue",
-						{ "type": "bool", "value": true }
-					]
+					"AddProperty": ["anyTrue", { "type": "bool", "value": true }]
 				}
 			]
 		},

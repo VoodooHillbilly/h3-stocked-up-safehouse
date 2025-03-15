@@ -78,10 +78,7 @@
 						},
 						"m_aValues": {
 							"type": "TArray<SEntityTemplateReference>",
-							"value": [
-								"8b3ae5a478cf83ad",
-								"40462fed52c653cf"
-							],
+							"value": ["8b3ae5a478cf83ad", "40462fed52c653cf"],
 							"postInit": true
 						}
 					},
@@ -311,11 +308,7 @@
 						},
 						"m_aValues": {
 							"type": "TArray<SEntityTemplateReference>",
-							"value": [
-								"65e091aec9a31680",
-								"fa5fd09440402c48",
-								"24b8e27762fb9611"
-							],
+							"value": ["65e091aec9a31680", "fa5fd09440402c48", "24b8e27762fb9611"],
 							"postInit": true
 						}
 					},
@@ -448,10 +441,7 @@
 						},
 						"m_aValues": {
 							"type": "TArray<SEntityTemplateReference>",
-							"value": [
-								"8b3ae5a478cf83ad",
-								"40462fed52c653cf"
-							]
+							"value": ["8b3ae5a478cf83ad", "40462fed52c653cf"]
 						}
 					},
 					"events": {
@@ -482,11 +472,7 @@
 						},
 						"m_aValues": {
 							"type": "TArray<SEntityTemplateReference>",
-							"value": [
-								"65e091aec9a31680",
-								"fa5fd09440402c48",
-								"24b8e27762fb9611"
-							],
+							"value": ["65e091aec9a31680", "fa5fd09440402c48", "24b8e27762fb9611"],
 							"postInit": true
 						}
 					},
@@ -619,10 +605,7 @@
 						},
 						"m_aValues": {
 							"type": "TArray<SEntityTemplateReference>",
-							"value": [
-								"8b3ae5a478cf83ad",
-								"40462fed52c653cf"
-							],
+							"value": ["8b3ae5a478cf83ad", "40462fed52c653cf"],
 							"postInit": true
 						}
 					},
@@ -654,11 +637,7 @@
 						},
 						"m_aValues": {
 							"type": "TArray<SEntityTemplateReference>",
-							"value": [
-								"65e091aec9a31680",
-								"fa5fd09440402c48",
-								"24b8e27762fb9611"
-							],
+							"value": ["65e091aec9a31680", "fa5fd09440402c48", "24b8e27762fb9611"],
 							"postInit": true
 						}
 					},

@@ -6,11 +6,7 @@
 			"SubEntityOperation": [
 				"51cd8de4fbdfaa4b",
 				{
-					"AddEventConnection": [
-						"PollTrue",
-						"SpawnItem",
-						"cafe2b068def211f"
-					]
+					"AddEventConnection": ["PollTrue", "SpawnItem", "cafe2b068def211f"]
 				}
 			]
 		},

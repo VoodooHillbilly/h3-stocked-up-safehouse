@@ -307,5 +307,6 @@
 			"enabledByDefault": true,
 			"contentFolders": ["content/kitchen_muffin"]
 		}
-	]
+	],
+	"updateCheck": "https://github.com/VoodooHillbilly/h3-stocked-up-safehouse/releases/latest/download/updates.json"
 }
