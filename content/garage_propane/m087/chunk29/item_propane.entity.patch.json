@@ -1,0 +1,458 @@
+{
+	"tempHash": "00A9B93A825F5BDC",
+	"tbluHash": "005BA5CA6AC00627",
+	"patch": [
+		{
+			"AddEntity": [
+				"cafe5314c007ca8e",
+				{
+					"parent": "bdd2f3ef19f86bbb",
+					"name": "Item_Propane",
+					"factory": "[assembly:/_pro/design/setpieces/setpieces_evergreen.template?/setpiece_evergreen_cosmeticitem.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/setpieces/setpieces_evergreen.template?/setpiece_evergreen_cosmeticitem.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_mTransform": {
+							"type": "SMatrix43",
+							"value": {
+								"rotation": {
+									"x": -0.0,
+									"y": 0.0,
+									"z": 33.67722448144056
+								},
+								"position": {
+									"x": 17.09515953063965,
+									"y": -150.1260986328125,
+									"z": -10.492047720336911
+								}
+							}
+						},
+						"repositoryId": {
+							"type": "ZGuid",
+							"value": "a8a0c154-c36f-413e-8f29-b83a1b7a22f0"
+						},
+						"m_bSpawnOnStart": {
+							"type": "bool",
+							"value": true
+						},
+						"playerMasteryLevel": {
+							"type": "SEntityTemplateReference",
+							"value": {
+								"ref": "a4d686556c13834a",
+								"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+							}
+						},
+						"m_bVisible": { "type": "bool", "value": true },
+						"requiredMasteryLevel": {
+							"type": "int32",
+							"value": 87
+						},
+						"spawnConditions": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": [],
+							"postInit": true
+						},
+						"m_eidParent": {
+							"type": "SEntityTemplateReference",
+							"value": "fffffffffffffffe",
+							"postInit": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafeee6ed66efc4b",
+				{
+					"parent": "89fc80f825fc3cb2",
+					"name": "Propane03",
+					"factory": "[modules:/zspatialentity.class].pc_entitytype",
+					"blueprint": "[modules:/zspatialentity.class].pc_entityblueprint",
+					"properties": {
+						"m_mTransform": {
+							"type": "SMatrix43",
+							"value": {
+								"rotation": {
+									"x": -0.0,
+									"y": 0.0,
+									"z": 29.9375992392018
+								},
+								"position": {
+									"x": 17.135971069335938,
+									"y": -151.44705200195312,
+									"z": -10.950010299682615
+								}
+							}
+						},
+						"m_eidParent": {
+							"type": "SEntityTemplateReference",
+							"value": "fffffffffffffffe",
+							"postInit": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe2d628738946b",
+				{
+					"parent": "89fc80f825fc3cb2",
+					"name": "Propane01",
+					"factory": "[modules:/zspatialentity.class].pc_entitytype",
+					"blueprint": "[modules:/zspatialentity.class].pc_entityblueprint",
+					"properties": {
+						"m_mTransform": {
+							"type": "SMatrix43",
+							"value": {
+								"rotation": {
+									"x": -0.0,
+									"y": 0.0,
+									"z": 33.67722448144056
+								},
+								"position": {
+									"x": 17.09515953063965,
+									"y": -150.1260986328125,
+									"z": -10.491647720336914
+								}
+							}
+						},
+						"m_eidParent": {
+							"type": "SEntityTemplateReference",
+							"value": "fffffffffffffffe",
+							"postInit": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafedfbd77343793",
+				{
+					"parent": "cafe5314c007ca8e",
+					"name": "GetRotation 3",
+					"factory": "[modules:/zgetrotationentity.class].pc_entitytype",
+					"blueprint": "[modules:/zgetrotationentity.class].pc_entityblueprint",
+					"properties": {
+						"m_Source": {
+							"type": "SEntityTemplateReference",
+							"value": "cafeee6ed66efc4b",
+							"postInit": true
+						}
+					},
+					"events": {
+						"RotationOutput": {
+							"Angles": ["cafe9adf51e82520"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe5b90d93a7152",
+				{
+					"parent": "cafe5314c007ca8e",
+					"name": "GetRotation 1",
+					"factory": "[modules:/zgetrotationentity.class].pc_entitytype",
+					"blueprint": "[modules:/zgetrotationentity.class].pc_entityblueprint",
+					"properties": {
+						"m_Source": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe2d628738946b",
+							"postInit": true
+						}
+					},
+					"events": {
+						"RotationOutput": {
+							"Angles": ["cafe1a2fa7931b6d"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafeffa43802fbe2",
+				{
+					"parent": "cafe5314c007ca8e",
+					"name": "SetPosition 3",
+					"factory": "[modules:/zsetpositionentity.class].pc_entitytype",
+					"blueprint": "[modules:/zsetpositionentity.class].pc_entityblueprint",
+					"properties": {
+						"m_Reference": {
+							"type": "SEntityTemplateReference",
+							"value": "cafeee6ed66efc4b"
+						},
+						"m_Entity": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe5314c007ca8e",
+							"postInit": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafebd3540a09ff0",
+				{
+					"parent": "cafe5314c007ca8e",
+					"name": "SetPosition 1",
+					"factory": "[modules:/zsetpositionentity.class].pc_entitytype",
+					"blueprint": "[modules:/zsetpositionentity.class].pc_entityblueprint",
+					"properties": {
+						"m_Reference": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe2d628738946b"
+						},
+						"m_Entity": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe5314c007ca8e",
+							"postInit": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe1a2fa7931b6d",
+				{
+					"parent": "cafe5314c007ca8e",
+					"name": "SetRotation 1",
+					"factory": "[modules:/zsetrotationentity.class].pc_entitytype",
+					"blueprint": "[modules:/zsetrotationentity.class].pc_entityblueprint",
+					"properties": {
+						"m_Geom": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe5314c007ca8e"
+						},
+						"m_fAngles": {
+							"type": "SVector3",
+							"value": {
+								"x": 0.0,
+								"y": 0.0,
+								"z": 33.67722448144056
+							}
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe9adf51e82520",
+				{
+					"parent": "cafe5314c007ca8e",
+					"name": "SetRotation 3",
+					"factory": "[modules:/zsetrotationentity.class].pc_entitytype",
+					"blueprint": "[modules:/zsetrotationentity.class].pc_entityblueprint",
+					"properties": {
+						"m_Geom": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe5314c007ca8e"
+						},
+						"m_fAngles": {
+							"type": "SVector3",
+							"value": {
+								"x": 0.0,
+								"y": 0.0,
+								"z": 29.9375992392018
+							}
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe5a8d0e15348a",
+				{
+					"parent": "cafe5314c007ca8e",
+					"name": "ValueBool_Operation 1",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_aValues": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": ["199958354ac44804"],
+							"postInit": true
+						},
+						"m_bFireOnLevelStart": {
+							"type": "bool",
+							"value": true
+						}
+					},
+					"events": {
+						"OnTrue": {
+							"SetPosition": ["cafebd3540a09ff0"],
+							"GetRotation": ["cafe5b90d93a7152"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafebd5a3c38d8f4",
+				{
+					"parent": "cafe5314c007ca8e",
+					"name": "ValueBool_Operation 3",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_aValues": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": ["aa881b9694b5cdbf"],
+							"postInit": true
+						},
+						"m_bFireOnLevelStart": {
+							"type": "bool",
+							"value": true
+						}
+					},
+					"events": {
+						"OnTrue": {
+							"SetPosition": ["cafeffa43802fbe2"],
+							"GetRotation": ["cafedfbd77343793"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafeb546d8bd0559",
+				{
+					"parent": "89fc80f825fc3cb2",
+					"name": "Propane02",
+					"factory": "[modules:/zspatialentity.class].pc_entitytype",
+					"blueprint": "[modules:/zspatialentity.class].pc_entityblueprint",
+					"properties": {
+						"m_mTransform": {
+							"type": "SMatrix43",
+							"value": {
+								"rotation": {
+									"x": -0.0,
+									"y": 0.0,
+									"z": 30.94447613361143
+								},
+								"position": {
+									"x": 17.13483238220215,
+									"y": -151.2555694580078,
+									"z": -10.950010299682615
+								}
+							}
+						},
+						"m_eidParent": {
+							"type": "SEntityTemplateReference",
+							"value": "fffffffffffffffe",
+							"postInit": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafee25481dca86a",
+				{
+					"parent": "cafe5314c007ca8e",
+					"name": "GetRotation 2",
+					"factory": "[modules:/zgetrotationentity.class].pc_entitytype",
+					"blueprint": "[modules:/zgetrotationentity.class].pc_entityblueprint",
+					"properties": {
+						"m_Source": {
+							"type": "SEntityTemplateReference",
+							"value": "cafeb546d8bd0559",
+							"postInit": true
+						}
+					},
+					"events": {
+						"RotationOutput": {
+							"Angles": ["cafeb045c427501d"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe6c80184f1254",
+				{
+					"parent": "cafe5314c007ca8e",
+					"name": "SetPosition 2",
+					"factory": "[modules:/zsetpositionentity.class].pc_entitytype",
+					"blueprint": "[modules:/zsetpositionentity.class].pc_entityblueprint",
+					"properties": {
+						"m_Reference": {
+							"type": "SEntityTemplateReference",
+							"value": "cafeb546d8bd0559"
+						},
+						"m_Entity": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe5314c007ca8e",
+							"postInit": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafeb045c427501d",
+				{
+					"parent": "cafe5314c007ca8e",
+					"name": "SetRotation 2",
+					"factory": "[modules:/zsetrotationentity.class].pc_entitytype",
+					"blueprint": "[modules:/zsetrotationentity.class].pc_entityblueprint",
+					"properties": {
+						"m_Geom": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe5314c007ca8e"
+						},
+						"m_fAngles": {
+							"type": "SVector3",
+							"value": {
+								"x": 0.0,
+								"y": 0.0,
+								"z": 30.94447613361143
+							}
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe7d3711569f67",
+				{
+					"parent": "cafe5314c007ca8e",
+					"name": "ValueBool_Operation 2",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_aValues": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": ["0e008fac203022a6"],
+							"postInit": true
+						},
+						"m_bFireOnLevelStart": {
+							"type": "bool",
+							"value": true
+						}
+					},
+					"events": {
+						"OnTrue": {
+							"SetPosition": ["cafe6c80184f1254"],
+							"GetRotation": ["cafee25481dca86a"]
+						}
+					}
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}
