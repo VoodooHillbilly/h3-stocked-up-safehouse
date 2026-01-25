@@ -19,12 +19,15 @@ Respawn any of the rewards in the chest behind the Safehouse shed.
 Add a Kiwi toy to the bathroom.
 
 -   Includes multiple choices for Gear Capacity.
-    Add a Red Tie Kiwi hiding near the exit ladder.
+
+Add a Red Tie Kiwi hiding near the exit ladder.
+
 -   Includes multiple choices for Gear Capacity.
 
 ### Kitchen
 
 Add a Blueberry Muffin by the coffee pot.
+
 Add a Kitchen Knife to end of the counter.
 
 ### Garage
@@ -32,7 +35,9 @@ Add a Kitchen Knife to end of the counter.
 Add a spare Fuse when the first is already in the fusebox.
 
 -   Don't build bombs in the dark!
-    Add a Propane Flask along the back wall.
+
+Add a Propane Flask along the back wall.
+
 -   Includes multiple choices for unlocking.
 
 ### Garden
