@@ -1,0 +1,86 @@
+{
+	"tempHash": "00A9B93A825F5BDC",
+	"tbluHash": "005BA5CA6AC00627",
+	"patch": [
+		{
+			"AddEntity": [
+				"cafedb3d61b75cc2",
+				{
+					"parent": "cafe79135ae591bb",
+					"name": "Fuse2Spawner",
+					"factory": "[modules:/zitemspawner.class].pc_entitytype",
+					"blueprint": "[modules:/zitemspawner.class].pc_entityblueprint",
+					"properties": {
+						"m_mTransform": {
+							"type": "SMatrix43",
+							"value": {
+								"rotation": { "x": 0.50120276, "y": 38.797806, "z": -103.35389 },
+								"position": { "x": 20.270277, "y": -158.93027, "z": -9.543187 }
+							}
+						},
+						"m_bSpawnOnStart": {
+							"type": "bool",
+							"value": true
+						},
+						"m_rMainItemKey": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe911556d103c5",
+							"postInit": true
+						},
+						"playerMasteryLevel": {
+							"type": "SEntityTemplateReference",
+							"value": {
+								"ref": "a4d686556c13834a",
+								"externalScene": "[assembly:/_pro/scenes/bricks/evergreen_setup.brick].pc_entitytype"
+							}
+						},
+						"m_bVisible": { "type": "bool", "value": true },
+						"requiredMasteryLevel": {
+							"type": "int32",
+							"value": 0
+						},
+						"spawnConditions": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": [],
+							"postInit": true
+						},
+						"m_eidParent": {
+							"type": "SEntityTemplateReference",
+							"value": "fffffffffffffffe",
+							"postInit": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe79135ae591bb",
+				{
+					"parent": "bdd2f3ef19f86bbb",
+					"name": "Item_Fuse2",
+					"factory": "[modules:/zentity.class].pc_entitytype",
+					"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe911556d103c5",
+				{
+					"parent": "cafe79135ae591bb",
+					"name": "Fuse2RepositoryKey",
+					"factory": "[modules:/zitemrepositorykeyentity.class].pc_entitytype",
+					"blueprint": "[modules:/zitemrepositorykeyentity.class].pc_entityblueprint",
+					"properties": {
+						"m_RepositoryId": {
+							"type": "ZGuid",
+							"value": "daa20d0d-5da4-4ab0-9c7b-39bcee192241"
+						}
+					}
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}
