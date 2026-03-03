@@ -275,9 +275,16 @@
 					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
 					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
 					"properties": {
+						"m_eEvaluation": {
+							"type": "ZValueBool_Operation_Signal.EEvaluationType",
+							"value": "NONE"
+						},
 						"m_aValues": {
 							"type": "TArray<SEntityTemplateReference>",
-							"value": ["199958354ac44804"],
+							"value": [
+								"21a812bfe71a5668",
+								"09bd0c6a36bd1bd0"
+							],
 							"postInit": true
 						},
 						"m_bFireOnLevelStart": {
@@ -305,7 +312,7 @@
 					"properties": {
 						"m_aValues": {
 							"type": "TArray<SEntityTemplateReference>",
-							"value": ["aa881b9694b5cdbf"],
+							"value": ["09bd0c6a36bd1bd0"],
 							"postInit": true
 						},
 						"m_bFireOnLevelStart": {
@@ -436,7 +443,7 @@
 					"properties": {
 						"m_aValues": {
 							"type": "TArray<SEntityTemplateReference>",
-							"value": ["0e008fac203022a6"],
+							"value": ["21a812bfe71a5668"],
 							"postInit": true
 						},
 						"m_bFireOnLevelStart": {
