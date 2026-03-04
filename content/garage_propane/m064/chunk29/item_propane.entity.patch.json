@@ -281,10 +281,7 @@
 						},
 						"m_aValues": {
 							"type": "TArray<SEntityTemplateReference>",
-							"value": [
-								"21a812bfe71a5668",
-								"09bd0c6a36bd1bd0"
-							],
+							"value": ["21a812bfe71a5668", "09bd0c6a36bd1bd0"],
 							"postInit": true
 						},
 						"m_bFireOnLevelStart": {

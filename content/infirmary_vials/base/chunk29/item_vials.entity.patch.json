@@ -85,10 +85,7 @@
 						},
 						"m_aValues": {
 							"type": "TArray<SEntityTemplateReference>",
-							"value": [
-								"8b3ae5a478cf83ad",
-								"40462fed52c653cf"
-							],
+							"value": ["8b3ae5a478cf83ad", "40462fed52c653cf"],
 							"postInit": true
 						}
 					},
@@ -467,10 +464,7 @@
 						},
 						"m_aValues": {
 							"type": "TArray<SEntityTemplateReference>",
-							"value": [
-								"8b3ae5a478cf83ad",
-								"40462fed52c653cf"
-							]
+							"value": ["8b3ae5a478cf83ad", "40462fed52c653cf"]
 						}
 					},
 					"events": {
@@ -650,10 +644,7 @@
 						},
 						"m_aValues": {
 							"type": "TArray<SEntityTemplateReference>",
-							"value": [
-								"8b3ae5a478cf83ad",
-								"40462fed52c653cf"
-							],
+							"value": ["8b3ae5a478cf83ad", "40462fed52c653cf"],
 							"postInit": true
 						}
 					},
