@@ -22,6 +22,6 @@
 		"**/*": "prettier --write --ignore-unknown"
 	},
 	"dependencies": {
-		"undici": "^7.28.0"
+		"undici": "^8.5.0"
 	}
 }
